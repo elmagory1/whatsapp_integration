@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-23 19:30:34.074066",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "whatsapp_api_details_section",
+  "whatsapp_template",
+  "whatsapp_business_account_id",
+  "enabled",
+  "column_break_4",
+  "bearer_token",
+  "whatsapp_phone_number_id",
+  "doctype_details_section",
+  "doctype_name",
+  "column_break_9",
+  "trigger_event",
+  "section_break_12",
+  "body_text",
+  "column_break_14",
+  "variables"
+ ],
+ "fields": [
+  {
+   "fieldname": "whatsapp_api_details_section",
+   "fieldtype": "Section Break",
+   "label": "WhatsApp API Details"
+  },
+  {
+   "fieldname": "whatsapp_template",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Whatsapp Template",
+   "options": "Whatsapp Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_business_account_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "WhatsApp Business Account ID",
+   "length": 300,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bearer_token",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bearer Token",
+   "length": 300,
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_phone_number_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "WhatsApp Phone Number Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "doctype_details_section",
+   "fieldtype": "Section Break",
+   "label": "Doctype Details"
+  },
+  {
+   "fetch_from": "whatsapp_template.doctype_name",
+   "fieldname": "doctype_name",
+   "fieldtype": "Link",
+   "label": "Doctype Name",
+   "options": "DocType",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "trigger_event",
+   "fieldtype": "Select",
+   "label": "Trigger Event",
+   "options": "\nOn Submit\nOn Save",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "whatsapp_template.body_text",
+   "fieldname": "body_text",
+   "fieldtype": "Small Text",
+   "label": "Body Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "variables",
+   "fieldtype": "Table",
+   "label": "Variables",
+   "options": "WhatsApp Variables",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-06 14:31:05.712994",
+ "modified_by": "Administrator",
+ "module": "Whatsapp Integration",
+ "name": "WhatsApp Notification",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

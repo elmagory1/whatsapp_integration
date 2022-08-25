@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-26 16:45:22.478512",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bearer_token",
+  "whatsapp_business_account_id",
+  "whatsapp_phone_number_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "bearer_token",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bearer Token",
+   "length": 300,
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_business_account_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Whatsapp Business Account ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "whatsapp_phone_number_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Whatsapp Phone Number Id",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-07-26 18:05:21.597325",
+ "modified_by": "Administrator",
+ "module": "Whatsapp Integration",
+ "name": "WhatsApp Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

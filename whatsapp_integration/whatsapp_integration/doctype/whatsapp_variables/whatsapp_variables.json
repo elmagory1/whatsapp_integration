@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2022-06-09 12:54:04.581768",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "value",
+  "field_name",
+  "field_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "value",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Label"
+  },
+  {
+   "fieldname": "field_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Field Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "field_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Field Type",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-15 12:28:08.695726",
+ "modified_by": "Administrator",
+ "module": "Whatsapp Integration",
+ "name": "WhatsApp Variables",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
